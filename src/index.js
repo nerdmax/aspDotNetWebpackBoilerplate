@@ -1,6 +1,9 @@
 import _ from "lodash";
 import "./scss/test.scss";
 
+import $ from "jquery";
+import "bootstrap";
+
 console.log("DSLKJLJF");
 
 function component() {
@@ -16,3 +19,7 @@ function component() {
 window.onload = function() {
   document.body.appendChild(component());
 };
+
+$(function() {
+  console.log("SDLFJKLD");
+});
