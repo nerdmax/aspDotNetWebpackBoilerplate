@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/scss/test.scss"],"names":[],"mappings":"AAAA,KAAK,uBAAuB,MAAM,UAAU,KAAK,Y","file":"styles.css","sourcesContent":["body{background-color:green}.test{color:red}.sdf{color:green}"],"sourceRoot":""}
