@@ -8,6 +8,7 @@ import $ from "jquery";
 import "jquery-match-height";
 import "parsleyjs";
 
+// Inject bootstrap related libs
 import "bootstrap";
 import "bootstrap-datepicker";
 
