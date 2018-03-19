@@ -8,13 +8,16 @@ import regular from "@fortawesome/fontawesome-free-regular";
 // Add the icon to the library so you can use it in your page
 fontawesome.library.add(regular);
 
-// Inject libs
+// Inject fundamental libs
 import _ from "lodash";
 import numeral from "numeral";
 
-// Inject frameworks
+// Inject jQuery related libs
 import $ from "jquery";
 import "jquery-match-height";
+import "parsleyjs";
+
+
 import "bootstrap";
 
 // Below are test code, should delete them later

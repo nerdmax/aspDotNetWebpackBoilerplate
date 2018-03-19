@@ -34,6 +34,7 @@
     "jquery-match-height": "^0.7.2",
     "lodash": "^4.17.5",
     "numeral": "^2.0.6",
+    "parsleyjs": "^2.8.1",
     "popper.js": "^1.14.1"
   }
 }
