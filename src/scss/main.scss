@@ -1,0 +1,28 @@
+// @import "../../node_modules/@fortawesome/fontawesome/styles.css";
+
+// @import "./vendors/web-fonts-with-css/scss/fa-regular.scss";
+// @import "./vendors/web-fonts-with-css/scss/fontawesome.scss";
+
+// @import "./vendors/web-fonts-with-css/css/fontawesome-all.css";
+
+@import "~bootstrap/scss/bootstrap";
+body {
+  background-color: red;
+}
+
+.test {
+  color: red;
+}
+
+.sdfljsd {
+  color: red;
+}
+
+.fa-circle {
+  font-size: 20px;
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid #000;
+  }
+}

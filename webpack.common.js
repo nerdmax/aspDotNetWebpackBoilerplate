@@ -10,8 +10,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
@@ -22,15 +21,31 @@ module.exports = {
             },
           },
           {
-            loader: "sass-loader",
+            loader: "postcss-loader", // Run post css actions
             options: {
               sourceMap: true,
-              precision: 8,
-              // data: "$ENV: " + "PRODUCTION" + ";",
+              plugins: function() {
+                // post css plugins, can be exported to postcss.config.js
+                return [require("precss"), require("autoprefixer")];
+              },
             },
+          },
+          {
+            loader: "sass-loader",
+            // options: {
+            //   sourceMap: true,
+            //   // precision: 8,
+            //   // data: "$ENV: " + "PRODUCTION" + ";",
+            // },
           },
         ],
       },
+      // {
+      //   test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
+      //   use: [
+      //     'file-loader'
+      //   ]
+      // }
     ],
   },
   plugins: [

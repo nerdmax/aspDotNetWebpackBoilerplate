@@ -1,10 +1,26 @@
-import _ from "lodash";
-import "./scss/test.scss";
+// Inject styles
+import "./scss/main.scss";
 
+// Inject fonts
+import fontawesome from '@fortawesome/fontawesome';
+// import solid from '@fortawesome/fontawesome-free-solid';
+import regular from '@fortawesome/fontawesome-free-regular';
+// Add the icon to the library so you can use it in your page
+fontawesome.library.add(regular);
+
+// Inject libs
+import _ from "lodash";
+import numeral from "numeral";
+
+// Inject frameworks
 import $ from "jquery";
 import "bootstrap";
 
+
+// Below are test code, should delete them later
+
 console.log("DSLKJLJF");
+console.log(numeral);
 
 function component() {
   var element = document.createElement("div");
@@ -21,5 +37,5 @@ window.onload = function() {
 };
 
 $(function() {
-  console.log("SDLFJKLD");
+  console.log("SDFJdK");
 });
