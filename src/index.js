@@ -2,9 +2,9 @@
 import "./scss/main.scss";
 
 // Inject fonts
-import fontawesome from '@fortawesome/fontawesome';
+import fontawesome from "@fortawesome/fontawesome";
 // import solid from '@fortawesome/fontawesome-free-solid';
-import regular from '@fortawesome/fontawesome-free-regular';
+import regular from "@fortawesome/fontawesome-free-regular";
 // Add the icon to the library so you can use it in your page
 fontawesome.library.add(regular);
 
@@ -14,8 +14,8 @@ import numeral from "numeral";
 
 // Inject frameworks
 import $ from "jquery";
+import "jquery-match-height";
 import "bootstrap";
-
 
 // Below are test code, should delete them later
 
@@ -38,4 +38,5 @@ window.onload = function() {
 
 $(function() {
   console.log("SDFJdK");
+  $(".match-height").matchHeight();
 });
