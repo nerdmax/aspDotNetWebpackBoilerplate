@@ -3,13 +3,13 @@
 
 <head>
   <title>Getting Started</title>
-  <link rel="stylesheet" href="./styles.css">
+  <!-- <link rel="stylesheet" href="./styles.css"> -->
   <script src="./bundle.js"></script>
 
   <!-- <link href="../src/scss/vendors/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet"> -->
 </head>
 
-<body>
+<body ng-app="app">
 
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/regular.css" integrity="sha384-A/oR8MwZKeyJS+Y0tLZ16QIyje/AmPduwrvjeH6NLiLsp4cdE4uRJl8zobWXBm4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous"> -->
@@ -45,6 +45,13 @@
   </form>
 
   <div class="date-picker-test"></div>
+
+  <div class="container">
+    <div ng-controller="TestController as testCtrl">
+      {{testCtrl.name}}
+      <button ng-click="testCtrl.changeName()">Change name</button>
+    </div>
+  </div>
 </body>
 
 </html>
