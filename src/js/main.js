@@ -12,6 +12,9 @@ import "parsleyjs";
 import "bootstrap";
 import "bootstrap-datepicker";
 
+// Inject angular
+import "./angularjs/app";
+
 // Below are test code, should delete them later
 
 console.log("DSLKJLJF");
@@ -42,4 +45,10 @@ $(function() {
     minViewMode: 1,
     daysOfWeekDisabled: "0",
   });
+
+  const msg = () => {
+    console.log("dsfdfs");
+  };
+
+  msg();
 });
