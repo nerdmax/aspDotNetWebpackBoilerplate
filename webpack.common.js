@@ -13,6 +13,26 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: [
+              [
+                "env",
+                {
+                  targets: {
+                    browsers: ["Explorer 11"],
+                  },
+                  useBuiltIns: true,
+                },
+              ],
+            ],
+          },
+        },
+      },
+      {
         test: /\.scss$/,
         use: [
           // MiniCssExtractPlugin.loader,

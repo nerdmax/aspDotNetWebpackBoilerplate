@@ -4,8 +4,8 @@ const common = require("./webpack.common.js");
 var proxy = "localhost:8081";
 
 module.exports = merge(common, {
-  // devtool: "source-map",
-  devtool: "cheap-module-eval-source-map",
+  devtool: "source-map",
+  // devtool: "cheap-module-eval-source-map",
   // devServer: {
   //   contentBase: "./dist",
   // },
