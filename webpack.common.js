@@ -3,9 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
 
 module.exports = {
-  entry: {
-    app: "./src/index.js",
-  },
+  entry: ["babel-polyfill", "./src/index.js"],
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
@@ -18,17 +16,7 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: [
-              [
-                "env",
-                {
-                  targets: {
-                    browsers: ["Explorer 11"],
-                  },
-                  useBuiltIns: true,
-                },
-              ],
-            ],
+            presets: ['babel-preset-env']
           },
         },
       },

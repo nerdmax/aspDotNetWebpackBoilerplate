@@ -1,3 +1,6 @@
+import "babel-polyfill";
+
+
 // Inject styles
 import "./scss/main.scss";
 
